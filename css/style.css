@@ -1,0 +1,328 @@
+@font-face {
+  font-family: GothamPro;
+  src: url(../lib/GothaProReg.otf); }
+
+@-webkit-keyframes ellipse-animation {
+  0% {
+    background: rgba(228, 72, 16, 0.5); }
+  35% {
+    background: rgba(228, 72, 16, 0.3); }
+  80% {
+    border: solid 1px rgba(228, 72, 16, 0.75); }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: rgba(228, 72, 16, 0);
+    border: solid 1px rgba(228, 72, 16, 0); } }
+
+@keyframes ellipse-animation {
+  0% {
+    background: rgba(228, 72, 16, 0.5); }
+  35% {
+    background: rgba(228, 72, 16, 0.3); }
+  80% {
+    border: solid 1px rgba(228, 72, 16, 0.75); }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: rgba(228, 72, 16, 0);
+    border: solid 1px rgba(228, 72, 16, 0); } }
+
+* {
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+body {
+  overflow: hidden; }
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto; }
+
+.slider-block {
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+
+.ice-top {
+  background: url(../pics/back_1.png) 100% 100%/cover no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .ice-top h2 {
+    font-size: 47.757px;
+    font-family: GothamPro;
+    font-weight: 400;
+    color: #0d319c;
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    top: 15%;
+    max-width: 75%;
+    left: 8%; }
+  .ice-top .ellipse-animation {
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    border: solid 1px #e44810;
+    border-radius: 50%;
+    position: relative; }
+    .ice-top .ellipse-animation .ellipse-center {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      position: absolute;
+      width: 30%;
+      height: 30%;
+      z-index: 2;
+      border-radius: 50%;
+      background: -webkit-gradient(linear, left top, right top, from(rgba(219, 96, 52, 0.950018)), color-stop(51%, rgba(224, 77, 25, 0.563463)), to(#e26b41));
+      background: -webkit-linear-gradient(left, rgba(219, 96, 52, 0.950018) 0%, rgba(224, 77, 25, 0.563463) 51%, #e26b41 100%);
+      background: -o-linear-gradient(left, rgba(219, 96, 52, 0.950018) 0%, rgba(224, 77, 25, 0.563463) 51%, #e26b41 100%);
+      background: linear-gradient(90deg, rgba(219, 96, 52, 0.950018) 0%, rgba(224, 77, 25, 0.563463) 51%, #e26b41 100%); }
+    .ice-top .ellipse-animation .ellipse-wave {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      position: absolute;
+      width: 30%;
+      height: 30%;
+      background: #e44810;
+      border: solid 1px #e44810;
+      border-radius: 50%;
+      -webkit-animation: ellipse-animation 1.2s infinite linear;
+      animation: ellipse-animation 1.2s infinite linear; }
+    .ice-top .ellipse-animation .first_wave {
+      -webkit-animation-delay: 0.6s;
+      animation-delay: 0.6s; }
+  .ice-top > div {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .ice-top .target {
+    top: 34%;
+    right: 25%; }
+    .ice-top .target p {
+      font-size: 20px;
+      font-family: GothamPro;
+      font-weight: 400;
+      color: #0d319c;
+      line-height: 1.2;
+      text-align: left;
+      font-weight: 700;
+      margin-left: 10px; }
+    .ice-top .target .ellipse-animation {
+      width: 50px;
+      height: 50px; }
+  .ice-top .risk {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    bottom: 30%;
+    right: 14%; }
+    .ice-top .risk p {
+      font-size: 20px;
+      font-family: GothamPro;
+      font-weight: 400;
+      color: #0d319c;
+      line-height: 1.2;
+      text-align: left;
+      font-weight: 700;
+      margin-bottom: 7px; }
+    .ice-top .risk .ellipse-animation {
+      width: 20px;
+      height: 20px; }
+  .ice-top .complication {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    bottom: 27%;
+    left: 36%; }
+    .ice-top .complication p {
+      font-size: 20px;
+      font-family: GothamPro;
+      font-weight: 400;
+      color: #0d319c;
+      line-height: 1.2;
+      text-align: left;
+      font-weight: 700;
+      width: 230px;
+      margin-bottom: 7px; }
+    .ice-top .complication .ellipse-animation {
+      width: 18px;
+      height: 18px; }
+  .ice-top .gipo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    bottom: 41%;
+    left: 21%; }
+    .ice-top .gipo p {
+      font-size: 20px;
+      font-family: GothamPro;
+      font-weight: 400;
+      color: #0d319c;
+      line-height: 1.2;
+      text-align: left;
+      font-weight: 700;
+      margin-bottom: 7px; }
+    .ice-top .gipo .ellipse-animation {
+      width: 25px;
+      height: 25px; }
+
+.ice-middle {
+  background: url(../pics/back_2.png) 100% 100%/cover no-repeat;
+  position: relative; }
+  .ice-middle h2 {
+    font-size: 48px;
+    font-family: GothamPro;
+    color: white;
+    line-height: 1.2;
+    text-align: center;
+    position: absolute;
+    font-weight: 100;
+    top: 435px;
+    left: 0%;
+    right: 0%;
+    max-width: 500px;
+    margin: auto; }
+  .ice-middle img {
+    position: absolute; }
+  .ice-middle .ice-1 {
+    right: 0;
+    top: 230px;
+    width: 145px;
+    height: 205px; }
+  .ice-middle .ice-2 {
+    top: 805px;
+    right: 210px;
+    width: 70px;
+    height: 70px; }
+  .ice-middle .ice-3 {
+    top: 640px;
+    width: 90px;
+    height: 90px;
+    left: 235px; }
+  .ice-middle .ice-4 {
+    width: 35px;
+    height: 35px;
+    left: 85px;
+    top: 365px; }
+
+.ice-bottom {
+  background: url(../pics/5.png) 100% 100%/cover no-repeat;
+  position: relative; }
+  .ice-bottom h2 {
+    font-size: 28px;
+    font-family: GothamPro;
+    color: white;
+    line-height: 1.2;
+    text-align: center;
+    position: absolute;
+    font-weight: 100;
+    top: 105px;
+    left: 75px; }
+  .ice-bottom img {
+    position: absolute; }
+  .ice-bottom .ice-5 {
+    bottom: 0;
+    left: 155px;
+    width: 165px;
+    height: 165px; }
+  .ice-bottom .ice-6 {
+    right: 0;
+    top: 215px;
+    width: 85px;
+    height: 95px; }
+  .ice-bottom .ice-7 {
+    width: 43px;
+    height: 41px;
+    left: -5px;
+    top: 105px; }
+
+.right-panel {
+  position: fixed;
+  right: 3%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column; }
+  .right-panel div {
+    background: white;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    margin-bottom: 8px;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1); }
+  .right-panel .active {
+    background: orange; }
+
+.bottom-panel {
+  position: fixed;
+  left: 0;
+  bottom: 20px;
+  right: 0;
+  margin: auto; }
+  .bottom-panel .bottom-panel-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative; }
+    .bottom-panel .bottom-panel-content p {
+      font-size: 18px;
+      font-family: GothamPro;
+      color: white; }
+    .bottom-panel .bottom-panel-content .arrow-down {
+      width: 26px;
+      height: 26px;
+      border-bottom: solid 3px white;
+      border-right: solid 3px white;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    .bottom-panel .bottom-panel-content .bottom-panel-backg {
+      position: absolute;
+      z-index: -1;
+      width: 490px;
+      height: 65px;
+      bottom: -70px;
+      border-radius: 100%;
+      -webkit-filter: blur(3px);
+      filter: blur(3px);
+      background: #f78b20;
+      -webkit-box-shadow: 0px -2px 20px 20px #f78b20;
+      box-shadow: 0px -2px 20px 20px #f78b20; }
